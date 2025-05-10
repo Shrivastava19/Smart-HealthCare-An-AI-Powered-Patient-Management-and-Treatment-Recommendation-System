@@ -25,9 +25,7 @@ Frontend: HTML, CSS (inline)
 ML Model: Scikit-learn (serialized as disease_model.pkl)
 
 File Structure
-bash
-Copy
-Edit
+
 ├── app.py                 # Main Flask application
 ├── train_model.py         # Script to train and export the disease prediction model
 ├── disease_model.pkl      # Trained machine learning model
