@@ -80,6 +80,13 @@ This script will generate a new `disease_model.pkl`.
 - **Disease Prediction Result**
 - **Chatbot Page**
 
+<img src ="Register.jpg">
+<img src ="login.jpg">
+<img src ="home.jpg">
+<img src ="patient.jpg">
+<img src ="analysis.jpg">
+<img src ="treatment.jpg">
+<img src ="chatbot.jpg">
 ## License
 
 This project is for educational purposes.
