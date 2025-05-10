@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Analysis</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: #444;
+            text-align: center;
+        }
+        form {
+            background-color: #eee;
+            border-radius: 8px;
+            padding: 20px;
+            width: 320px;
+            margin: 40px auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #FF9800;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #FB8C00;
+        }
+        h3 {
+            text-align: center;
+            color: #e91e63;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Disease Analysis</h2>
+    <form method="POST">
+        Symptoms: <input type="text" name="symptoms"><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if disease %}
+    <h3>Predicted Disease: {{ disease }}</h3>
+    {% endif %}
+    <a href="/home">Home</a>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Data</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #c8e6c9, #ffe0b2);
+        }
+        h2 {
+            color: #4caf50;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        form {
+            background: #fff;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        label {
+            display: inline-block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            transition: border 0.3s;
+        }
+        input[type="text"]:focus {
+            border: 1px solid #4caf50;
+            outline: none;
+        }
+        input[type="submit"] {
+            background: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #388e3c;
+        }
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            max-width: 400px;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #f1f8e9;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            color: #4caf50;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Patient Data</h2>
+    <form method="POST">
+        <label>Name:</label>
+        <input type="text" name="name">
+        
+        <label>Age:</label>
+        <input type="text" name="age">
+        
+        <label>Gender:</label>
+        <input type="text" name="gender">
+        
+        <label>Symptoms:</label>
+        <input type="text" name="symptoms">
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h3>Patients</h3>
+    <ul>
+        {% for patient in patients %}
+            <li>{{ patient.name }} - {{ patient.age }} - {{ patient.gender }} - {{ patient.symptoms }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/home">Home</a>
+</body>
+</html>
