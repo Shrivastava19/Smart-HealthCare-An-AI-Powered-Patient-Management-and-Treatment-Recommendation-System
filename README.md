@@ -24,8 +24,10 @@ Frontend: HTML, CSS (inline)
 
 ML Model: Scikit-learn (serialized as disease_model.pkl)
 
-File Structure
 
+## File Structure
+
+```
 disease-prediction-app/
 ├── app.py                     # Main Flask application
 ├── train_model.py             # Script to train and save the ML model
@@ -42,6 +44,8 @@ disease-prediction-app/
 ├── static/                    # (Optional) CSS, JS, or images if separated
 ├── .gitignore                 # Git ignore file (optional)
 └── tempCodeRunnerFile.py      # Temporary/dev file (optional to include)
+```
+
 
 
 
