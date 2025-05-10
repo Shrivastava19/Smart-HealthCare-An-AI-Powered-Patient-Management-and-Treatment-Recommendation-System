@@ -74,12 +74,6 @@ This script will generate a new `disease_model.pkl`.
 
 ## Screenshots
 
-- **Login/Register**
-- **Home Dashboard**
-- **Patient Data Entry**
-- **Disease Prediction Result**
-- **Chatbot Page**
-
 <img src ="Register.jpg">
 <img src ="login.jpg">
 <img src ="home.jpg">
