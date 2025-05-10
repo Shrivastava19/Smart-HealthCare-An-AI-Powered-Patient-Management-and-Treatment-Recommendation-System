@@ -26,22 +26,24 @@ ML Model: Scikit-learn (serialized as disease_model.pkl)
 
 File Structure
 
-├── app.py                 # Main Flask application
-├── train_model.py         # Script to train and export the disease prediction model
-├── disease_model.pkl      # Trained machine learning model
-├── templates/
+disease-prediction-app/
+├── app.py                     # Main Flask application
+├── train_model.py             # Script to train and save the ML model
+├── disease_model.pkl          # Trained model and vectorizer (Pickle file)
+├── README.md                  # Project documentation
+├── requirements.txt           # Python dependencies (you can generate this)
+├── templates/                 # HTML templates
 │   ├── login.html
 │   ├── register.html
 │   ├── home.html
 │   ├── patient_data.html
 │   ├── disease_analysis.html
 │   ├── chatbot.html
-├── tempCodeRunnerFile.py  # Temporary script file (optional)
-Getting Started
-Prerequisites
-Python 3.x
+├── static/                    # (Optional) CSS, JS, or images if separated
+├── .gitignore                 # Git ignore file (optional)
+└── tempCodeRunnerFile.py      # Temporary/dev file (optional to include)
 
-pip
+
 
 Installation
 Clone the repository or download the source code.
