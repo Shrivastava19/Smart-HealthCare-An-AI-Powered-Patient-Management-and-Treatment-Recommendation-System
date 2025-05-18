@@ -81,6 +81,8 @@ This script will generate a new `disease_model.pkl`.
 <img src ="analysis.jpg">
 <img src ="treatment.jpg">
 <img src ="chatbot.jpg">
+
+
 ## License
 
 This project is for educational purposes.
