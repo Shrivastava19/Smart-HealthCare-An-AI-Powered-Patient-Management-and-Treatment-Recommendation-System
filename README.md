@@ -44,7 +44,7 @@ disease-prediction-app/
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.10+
 - pip
 
 ### Installation
